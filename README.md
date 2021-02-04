@@ -1,2 +1,2 @@
 # HansXXX
-Jag hatar saker
+Soltorgs hemsida *bra version.*
