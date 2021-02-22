@@ -1,41 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Soltorgsgymnasiet</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Soltorgsgymnasiet</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Leaflet Map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          id="headerLogo"
+          src="/img/soltorgLiggande.png"
+          alt="Soltorgsgymnasiet Logotyp"
+        />
+        <div id="links">
+          <div>
+            <a href="#">Logga in</a>
+            <a href="#">Sök</a>
+          </div>
+          <div>
+            <a href="#">Sak</a>
+            <a href="#">Annan sak</a>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div id="tek">Teknik</div>
+        <div id="nat">Natur</div>
+        <div id="hum">Hum</div>
+        <div id="home">Hem</div>
+        <div id="om">Om</div>
+        <div id="nyheter">Nyheter</div>
+        <div id="elev">Elev</div>
+        <div id="kontakt">Kontakt</div>
+      </nav>
+      <div class="navSideLeft"></div>
+      <div class="navSideRight"></div>
+      <div class="image">
+        <img src="/img/6023d00faabdd.jpg" alt="Pike" />
+      </div>
+      <div class="squares">
+        <div id="square1">Sak1</div>
+        <div id="square2">Sak2</div>
+        <div id="square3">Sak3</div>
+        <div id="square4">Sak4</div>
+      </div>
+      <main>
+        <h2>NEIN!</h2>
+      </main>
+      <footer>
+        <div class="footerText">
+          <div>
+            <h2>Kontakt</h2>
+            <p>Telefon: 0243-744 92</p>
+            <p>Besöksadress: Masergatan 20</p>
+          </div>
+          <div>
+            <h2>Sociala Medier</h2>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+        <div id="mapid"></div>
+      </footer>
 
-  <div class="container">
-    <header>
-      <h1>Soltorgsgymnasiet</h1>
-    </header>
-    <nav>
-      <div>Teknik</div>
-      <div>Natur</div>
-      <div>Hum</div>
-    </nav>
-    <main>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur magni incidunt quae inventore rerum molestiae saepe nostrum commodi, soluta in est reprehenderit. Numquam, aspernatur. Deleniti culpa labore consequatur necessitatibus nam?</p>
-    </main>
+      <!--
     <aside class="rightAside">
       <div class="calendar">
         <ul class="weekdays">
@@ -81,13 +140,12 @@
           <li>31</li>
         </ul>
       </div>
-    </aside>
-  </div>
-  
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    </aside> -->
+    </div>
 
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

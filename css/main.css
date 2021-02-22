@@ -100,12 +100,131 @@ textarea {
     grid-auto-rows: auto;
     grid-template-areas: 
     " . . header header header header header header header header . . "
-    ""
-    ""
-    "";
+    " navSideLeft navSideLeft nav nav nav nav nav nav nav nav navSideRight navSideRight "
+    " image image image image image image image image image image image image "
+    " . . main main main main main main main main . . "
+    " . . footer footer footer footer footer footer footer footer . . "
+    ;
   }
   header{
     grid-area: header;
+    background-color: #FFE500;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: " headerLogo . . links ";
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #headerLogo{
+    grid-area: headerLogo;
+    height: 10em;
+  }
+  #links{
+    grid-area: links;
+  }
+  nav {
+    grid-area: nav;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: " home om tek nat hum nyheter elev kontakt ";
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+  }
+  .navSideLeft{
+    grid-area: navSideLeft;
+    background-color: brown;
+    height: auto;
+    width: 100%;
+  }
+  .navSideRight{
+    grid-area: navSideRight;
+    background-color: brown;
+    height: auto;
+    width: 100%;
+  }
+  #tek{
+    grid-area: tek;
+  }
+  #nat{
+    grid-area: nat;
+  }
+  #hum{
+    grid-area: hum;
+  }
+  #home{
+    grid-area: home;
+  }
+  #om{
+    grid-area: om;
+  }
+  #nyheter{
+    grid-area: nyheter;
+  }
+  #elev{
+    grid-area: elev;
+  }
+  #kontakt{
+    grid-area: kontakt;
+  }
+  .image {
+    grid-area: image;
+  }
+  .image img{
+    width: 100%;
+    height: 40em;
+  }
+  .squares{
+    position: absolute;
+    left: 16.6%;
+    right: 83.3%;
+    top: 45em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: " sq1 sq2 sq3 sq4 ";
+    grid-column-gap: 2em;
+  }
+  #square1{
+    grid-area: sq1;
+    background-color: aqua;
+    width: 1fr;
+    height: 12em;
+  }
+  #square2{
+    grid-area: sq2;
+    background-color: aqua;
+    width: 1fr;
+    height: 12em;
+  }
+  #square3{
+    grid-area: sq3;
+    background-color: aqua;
+    width: 1fr;
+    height: 12em;
+  }
+  #square4{
+    grid-area: sq4;
+    background-color: aqua;
+    width: 1fr;
+    height: 12em;
+  }
+  main{
+    grid-area: main;
+  }
+  footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: " footerText footerText mapid mapid ";
+  }
+  #mapid{
+    grid-area: mapid;
+    height: 30em;
   }
   h1{
     font-size: 4em;
