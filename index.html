@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Soltorgsgymnasiet</title>
     <meta name="description" content="" />
@@ -18,83 +19,114 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- Leaflet Map -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script src="https://kit.fontawesome.com/4f0a01e2f5.js" crossorigin="anonymous"></script>
+
 
     <meta name="theme-color" content="#fafafa" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <header>
-        <img
-          id="headerLogo"
-          src="/img/soltorgLiggande.png"
-          alt="Soltorgsgymnasiet Logotyp"
-        />
-        <div id="links">
-          <div>
-            <a href="#">Logga in</a>
-            <a href="#">Sök</a>
-          </div>
-          <div>
-            <a href="#">Sak</a>
-            <a href="#">Annan sak</a>
-          </div>
+        <header>
+            <img id="headerLogo" src="/img/soltorgLiggande.png" alt="Soltorgsgymnasiet Logotyp" />
+            <div id="links">
+                <div>
+                    <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div>
+                    <a href="#">Sak</a>
+                    <a href="#">Annan sak</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <a href="#">
+                <div id="tek">Teknik</div>
+            </a>
+            <a href="#">
+                <div id="nat">Natur</div>
+            </a>
+            <a href="#">
+                <div id="hum">Hum</div>
+            </a>
+            <a href="#">
+                <div id="home">Hem</div>
+            </a>
+            <a href="#">
+                <div id="om">Om</div>
+            </a>
+            <a href="#">
+                <div id="nyheter">Nyheter</div>
+            </a>
+            <a href="#">
+                <div id="elev">Elev</div>
+            </a>
+            <a href="#">
+                <div id="kontakt">Kontakt</div>
+            </a>
+        </nav>
+        <div class="navSideLeft"></div>
+        <div class="navSideRight"></div>
+        <div class="image">
+            <img src="/img/6023d00faabdd.jpg" alt="Pike" />
         </div>
-      </header>
-      <nav>
-        <div id="tek">Teknik</div>
-        <div id="nat">Natur</div>
-        <div id="hum">Hum</div>
-        <div id="home">Hem</div>
-        <div id="om">Om</div>
-        <div id="nyheter">Nyheter</div>
-        <div id="elev">Elev</div>
-        <div id="kontakt">Kontakt</div>
-      </nav>
-      <div class="navSideLeft"></div>
-      <div class="navSideRight"></div>
-      <div class="image">
-        <img src="/img/6023d00faabdd.jpg" alt="Pike" />
-      </div>
-      <div class="squares">
-        <div id="square1">Sak1</div>
-        <div id="square2">Sak2</div>
-        <div id="square3">Sak3</div>
-        <div id="square4">Sak4</div>
-      </div>
-      <main>
-        <h2>NEIN!</h2>
-      </main>
-      <footer>
-        <div class="footerText">
-          <div>
-            <h2>Kontakt</h2>
-            <p>Telefon: 0243-744 92</p>
-            <p>Besöksadress: Masergatan 20</p>
-          </div>
-          <div>
-            <h2>Sociala Medier</h2>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-          </div>
+        <div class="squares">
+            <div id="square1">Sak1</div>
+            <div id="square2">Sak2</div>
+            <div id="square3">Sak3</div>
+            <div id="square4">Sak4</div>
         </div>
-        <div id="mapid"></div>
-      </footer>
+        <main>
+            <h2>NEIN!</h2>
+        </main>
+        <div class="scrollingReview">
+            <div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+        </div>
+        <div id="footerSideLeft"></div>
+        <div id="footerSideRight"></div>
+        <footer>
+            <div class="footerText">
+                <div>
+                    <h2>Kontakt</h2>
+                    <p><i class="fas fa-phone"></i> 0243-744 92</p>
+                    <p><i class="fas fa-map-marked-alt"></i> Masergatan 20</p>
+                </div>
+                <div>
+                    <h2>Sociala Medier</h2>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div id="mapid"></div>
+        </footer>
 
-      <!--
+        <!--
     <aside class="rightAside">
       <div class="calendar">
         <ul class="weekdays">
@@ -147,5 +179,6 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
