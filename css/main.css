@@ -117,7 +117,7 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
-    grid-template-areas: " headerLogo . . links ";
+    grid-template-areas: " headerLogo . links links ";
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -129,11 +129,12 @@ header {
 
 #links {
     grid-area: links;
+    text-align: right;
 }
 
 nav {
     grid-area: nav;
-    background-color: brown;
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
@@ -145,14 +146,14 @@ nav {
 
 .navSideLeft {
     grid-area: navSideLeft;
-    background-color: brown;
+    background-color: white;
     height: auto;
     width: 100%;
 }
 
 .navSideRight {
     grid-area: navSideRight;
-    background-color: brown;
+    background-color: white;
     height: auto;
     width: 100%;
 }
@@ -196,6 +197,7 @@ nav>a:hover {
 nav>a {
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .image {
@@ -204,47 +206,49 @@ nav>a {
 
 .image img {
     width: 100%;
-    height: 40em;
+    height: 43em;
 }
 
 .squares {
     position: absolute;
-    left: 16.6%;
-    right: 83.3%;
-    top: 45em;
+    /* left: 16.6%;
+    right: 83.3%; */
+    width: 100%;
+    margin-left: 0;
+    top: 53em;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: " sq1 sq2 sq3 sq4 ";
-    grid-column-gap: 2em;
+    grid-template-areas: " . sq1 sq2 sq3 sq4 .";
+    grid-column-gap: 1.5em;
 }
 
 #square1 {
     grid-area: sq1;
-    background-color: aqua;
+    background-color: white;
     width: 1fr;
-    height: 12em;
+    height: 16em;
 }
 
 #square2 {
     grid-area: sq2;
-    background-color: aqua;
+    background-color: white;
     width: 1fr;
-    height: 12em;
+    height: 16em;
 }
 
 #square3 {
     grid-area: sq3;
-    background-color: aqua;
-    width: 1fr;
-    height: 12em;
+    background-color: white;
+    max-width: 1fr;
+    height: 16em;
 }
 
 #square4 {
     grid-area: sq4;
-    background-color: aqua;
+    background-color: white;
     width: 1fr;
-    height: 12em;
+    height: 16em;
 }
 
 main {
@@ -260,7 +264,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: " footerText footerText mapid mapid ";
+    grid-template-areas: " kontakt sociala mapid mapid " " kontakt sociala mapid mapid " " other other mapid mapid ";
     background-color: #345995;
 }
 
@@ -279,6 +283,18 @@ footer {
 #mapid {
     grid-area: mapid;
     height: 30em;
+}
+
+#kontakt {
+    grid-area: kontakt;
+}
+
+#sociala {
+    grid-area: sociala;
+}
+
+#other {
+    grid-area: other;
 }
 
 h1 {
@@ -310,6 +326,63 @@ h1 {
     display: inline-block;
     width: 13.6%;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login {
+    padding: 0.5em;
+}
+
+#lärLog {
+    margin-right: 1em;
+}
+
+#lärLog:hover {
+    opacity: 0.7;
+}
+
+#elevLog {
+    margin-right: 1em;
+}
+
+#elevLog:hover {
+    opacity: 0.7;
+}
+
+.sök {
+    padding: 0.5em;
+}
+
+.språk {
+    padding: 0.5em;
+}
+
+#språk:hover {
+    opacity: 0.7;
+}
+
+.RutText {
+    display: grid;
+    height: 5em;
+    margin-top: 10em;
+}
+
+.LitenRuttext {
+    margin: auto;
+    font-size: 1.4em;
+}
+
+.StorRuttext {
+    margin: auto;
+    font-size: 2.2em;
+}
+
+.Ivar {
+    height: 100%;
+    width: 100%;
 }
 
 
