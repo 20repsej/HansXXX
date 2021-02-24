@@ -221,6 +221,7 @@ nav>a {
     grid-template-rows: auto;
     grid-template-areas: " . sq1 sq2 sq3 sq4 .";
     grid-column-gap: 1.5em;
+    filter: invert(100%);
 }
 
 #square1 {
@@ -228,6 +229,8 @@ nav>a {
     background-color: white;
     width: 1fr;
     height: 16em;
+    background-image: url("/img/eventuellt ivars pappa.png");
+    background-size: cover;
 }
 
 #square2 {
@@ -235,6 +238,8 @@ nav>a {
     background-color: white;
     width: 1fr;
     height: 16em;
+    background-image: url("/img/friterad harder ivar.png");
+    background-size: cover;
 }
 
 #square3 {
@@ -249,14 +254,37 @@ nav>a {
     background-color: white;
     width: 1fr;
     height: 16em;
+    background-image: url("/img/IMG_20201028_173541.jpg");
 }
 
 main {
+    margin-top: 12em;
     grid-area: main;
 }
 
 .scrollingReview {
     grid-area: scrollingReview;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: " review review review review review review";
+    grid-column-gap: 1em;
+    margin: 1em;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    border: #345995 2px solid;
+    display: grid;
+}
+
+.review h3 {
+    margin: 0;
+}
+
+.review p {
+    margin: 0;
 }
 
 footer {
@@ -360,29 +388,37 @@ a {
     padding: 0.5em;
 }
 
-#språk:hover {
-    opacity: 0.7;
+#språk:hover .språkDrop {
+    background: white;
 }
+
+.språkDrop {
+    display: block;
+}
+
+.språkDrop:hover {}
 
 .RutText {
     display: grid;
-    height: 5em;
-    margin-top: 10em;
+    height: 100%;
+    padding-top: 0em;
+    background-color: rgba(28, 28, 28, 0.73);
 }
 
 .LitenRuttext {
     margin: auto;
     font-size: 1.4em;
+    filter: brightness(100%) invert(100%);
 }
 
 .StorRuttext {
     margin: auto;
     font-size: 2.2em;
+    filter: brightness(100%) invert(100%);
 }
 
-.Ivar {
-    height: 100%;
-    width: 100%;
+.RutText:hover {
+    display: none;
 }
 
 
