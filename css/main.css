@@ -386,19 +386,23 @@ a {
 
 .språk {
     padding: 0.5em;
+    width: 20em;
+    align-self: flex-end;
 }
 
-#språk:hover .språkDrop {
-    background: white;
+.språk:hover .språkDrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    justify-content: right;
 }
 
 .språkDrop {
-    display: block;
+    display: none;
+    list-style: none;
 }
 
-.språkDrop:hover {}
-
-.RutText {
+#RutText {
     display: grid;
     height: 100%;
     padding-top: 0em;
@@ -407,6 +411,7 @@ a {
 
 .LitenRuttext {
     margin: auto;
+    margin-top: 7em;
     font-size: 1.4em;
     filter: brightness(100%) invert(100%);
 }
@@ -414,11 +419,43 @@ a {
 .StorRuttext {
     margin: auto;
     font-size: 2.2em;
+    margin-bottom: 1em;
     filter: brightness(100%) invert(100%);
 }
 
-.RutText:hover {
+#RutText:hover {
     display: none;
+}
+
+#RutPil {
+    display: none;
+    height: 100%;
+    padding-top: 0em;
+    background-color: rgba(28, 28, 28, 0.73);
+}
+
+#RutText:hover+#RutPil {
+    display: grid;
+}
+
+#RutPil:hover+#RutText {
+    display: none;
+}
+
+#square1:hover+#RutPil {
+    display: grid;
+}
+
+#square2:hover+#RutPil {
+    display: grid;
+}
+
+#square3:hover+#RutPil {
+    display: grid;
+}
+
+#square4:hover+#RutPil {
+    display: grid;
 }
 
 
@@ -591,4 +628,11 @@ a {
     h3 {
         page-break-after: avoid;
     }
+}
+
+..RutText {
+    display: grid;
+    height: 100%;
+    padding-top: 0em;
+    background-color: rgba(28, 28, 28, 0.73);
 }

@@ -1,10 +1,10 @@
-var map = L.map('mapid').setView([60.492695, 15.416517], 14);
+var map = L.map('mapid').setView([60.499899, 15.426437], 14);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([60.492695, 15.416517]).addTo(map)
+L.marker([60.499899, 15.426437]).addTo(map)
     .bindPopup('Soltorgsgymnasiet')
     .openPopup();
 
