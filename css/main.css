@@ -202,6 +202,7 @@ nav>a {
 
 .image {
     grid-area: image;
+    
 }
 
 .image img {
@@ -458,6 +459,41 @@ a {
     display: grid;
 }
 
+.kontaktListan {
+    width: fit-content;
+    margin-left: 2em;
+}
+
+.lärareAÖ{
+    font-size: 2em;
+}
+
+.fa-user{
+    margin: 0;
+}
+
+.lärarLista {
+    background-color: #e0bb00;
+    margin-top: -1.2em;
+    margin-left: 1.5em;
+    width: fit-content;
+    display: grid;
+}
+
+.lärare {
+    margin:1em;
+    width: fit-content;
+}
+
+.lärarText {
+    margin: 0;
+    width: fit-content;
+}
+
+.curNav {
+    background-color: #FFE500;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -630,7 +666,7 @@ a {
     }
 }
 
-..RutText {
+.RutText {
     display: grid;
     height: 100%;
     padding-top: 0em;
