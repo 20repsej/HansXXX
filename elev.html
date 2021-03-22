@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Soltorgsgymnasiet</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script src="https://kit.fontawesome.com/4f0a01e2f5.js" crossorigin="anonymous"></script>
+
+
+    <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="WTAvmWhp"></script>
+    <div class="container">
+        <header>
+            <a href="index.html"><img id="headerLogo" src="/img/soltorgLiggande.png" alt="Soltorgsgymnasiet Logotyp" /></a>
+            <div id="links">
+                <div class="login">
+                    <a href="#" id="lärLog"><i class="fas fa-chalkboard-teacher"></i> Inloggning Lärare</a>
+                    <a href="#" id="elevLog"><i class="fas fa-user-graduate"></i> Inloggning Elev</a>
+                </div>
+                <div class="sök">
+                    <input type="text" name="Sök" placeholder="Sök">
+                    <a href="#" onclick="search()" id="sökKnapp">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="språk">
+                    <a href="#" id="språk">Välj Språk <i class="fas fa-chevron-down"></i></a>
+                    <div class="språkDrop">
+                        <ul>
+                            <li>Svenska</li>
+                            <li>Engelska</li>
+                            <li>Blabla</li>
+                            <li>Inget språk</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <a href="teknik.html">
+                <div id="tek">Teknik</div>
+            </a>
+            <a href="natur.html">
+                <div id="nat">Natur</div>
+            </a>
+            <a href="hum.html">
+                <div id="hum">Hum</div>
+            </a>
+            <a href="index.html">
+                <div id="home">Hem</div>
+            </a>
+            <a href="om.html">
+                <div id="om">Om</div>
+            </a>
+            <a href="nyheter.html">
+                <div id="nyheter">Nyheter</div>
+            </a>
+            <a href="elev.html" class="curNav">
+                <div id="elev">Elev</div>
+            </a>
+            <a href="kontakt.html">
+                <div id="kontakt">Kontakt</div>
+            </a>
+        </nav>
+        <div class="navSideLeft"></div>
+        <div class="navSideRight"></div>
+        <div class="image">
+            <img src="/img/harder ivar.png" alt="Ivar" />
+            <small>Genomsnittlig soltorgselev</small>
+        </div>
+        <main>
+            <h2>Elev på Soltorgsgymnasiet</h2>
+            <p>Som elev på soltorgsgymnasiet kommer du utvecklas som person om du känner för det eller något sådant</p>
+            <p>"På Soltorg känns det som jag alltid kan få visa vem jag är, sen är det ju bra att pengarna jag tjänar går till "
+        </main>
+        <div class="scrollingReview">
+            <div class="review">
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div class="review">
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div class="review">
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div class="review">
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div class="review">
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+            <div class="review">
+                <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <h3>Fantastisk skola</h3>
+                <p>- betald elev</p>
+            </div>
+        </div>
+        <div id="footerSideLeft"></div>
+        <div id="footerSideRight"></div>
+        <footer>
+            <div id="kontakt">
+                <h2>Kontakt</h2>
+                <p><i class="fas fa-phone"></i> 0243-744 92</p>
+                <p><i class="fas fa-map-marked-alt"></i> Lindesnäsgatan 1</p>
+            </div>
+            <div id="sociala">
+                <h2>Sociala Medier</h2>
+                <a href="#"><i class="fab fa-instagram"></i> @Soltorgsgymnasiet</a><br><br>
+                <a href="#"><i class="fab fa-facebook-f"></i> @Soltorgsgymnasiet</a><br><br>
+                <a href="#"><i class="fab fa-twitter"></i> @Soltorgsgymnasiet</a>
+            </div>
+            <div id="other">
+                <a href="#">Sidmapp</a>
+                <a href="#">Privacitet</a>
+                <p>&copy; Soltorgsgymnasiet 2021 | Hemsidedesign av Marylebone Boys' School</p>
+            </div>
+            <div id="mapid"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1615290912299!6m8!1m7!1sgssYwnaRgQ6d7CwO7RS2ww!2m2!1d60.49986127198552!2d15.42624827676408!3f147.56316987575542!4f-2.8772614760221558!5f0.7820865974627469" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy"></iframe>
+        </footer>
+
+        <!--
+    <aside class="rightAside">
+      <div class="calendar">
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Ti</li>
+          <li>On</li>
+          <li>To</li>
+          <li>Fr</li>
+          <li>LÖ</li>
+          <li>Sö</li>
+        </ul>
+        <ul class="days">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+      </div>
+    </aside> -->
+    </div>
+
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
