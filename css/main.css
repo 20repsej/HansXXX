@@ -1,28 +1,20 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-
-
-/*
+        /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+        /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+        /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
-
-/* ==========================================================================
+        /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-
-/*
+        
+        html {
+            color: #222;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
@@ -31,486 +23,477 @@ html {
  *
  * Customize the background color to match your design.
  */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-
-/*
+        
+         ::-moz-selection {
+            background: #b3d4fc;
+            text-shadow: none;
+        }
+        
+         ::selection {
+            background: #b3d4fc;
+            text-shadow: none;
+        }
+        /*
  * A better looking default horizontal rule
  */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-
-/*
+        
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+        /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-
-/*
+        
+        audio,
+        canvas,
+        iframe,
+        img,
+        svg,
+        video {
+            vertical-align: middle;
+        }
+        /*
  * Remove default fieldset styles.
  */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-
-/*
+        
+        fieldset {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        /*
  * Allow only vertical resizing of textareas.
  */
-
-textarea {
-    resize: vertical;
-}
-
-
-/* ==========================================================================
+        
+        textarea {
+            resize: vertical;
+        }
+        /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-/* Insert great and useful css here */
-
-body {
-    background-color: #FFE500;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas: " . . header header header header header header header header . . " " navSideLeft navSideLeft nav nav nav nav nav nav nav nav navSideRight navSideRight " " image image image image image image image image image image image image " " . . main main main main main main main main . . " " scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview " " footerSideLeft footerSideLeft footer footer footer footer footer footer footer footer footerSideRight footerSideRight ";
-}
-
-header {
-    grid-area: header;
-    background-color: #FFE500;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    grid-template-areas: " headerLogo . links links ";
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-#headerLogo {
-    grid-area: headerLogo;
-    height: 10em;
-}
-
-#links {
-    grid-area: links;
-    text-align: right;
-}
-
-nav {
-    grid-area: nav;
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: " home om tek nat hum nyheter elev kontakt ";
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    font-size: 2em;
-}
-
-.navSideLeft {
-    grid-area: navSideLeft;
-    background-color: white;
-    height: auto;
-    width: 100%;
-}
-
-.navSideRight {
-    grid-area: navSideRight;
-    background-color: white;
-    height: auto;
-    width: 100%;
-}
-
-#tek {
-    grid-area: tek;
-}
-
-#nat {
-    grid-area: nat;
-}
-
-#hum {
-    grid-area: hum;
-}
-
-#home {
-    grid-area: home;
-}
-
-#om {
-    grid-area: om;
-}
-
-#nyheter {
-    grid-area: nyheter;
-}
-
-#elev {
-    grid-area: elev;
-}
-
-#kontakt {
-    grid-area: kontakt;
-}
-
-nav>a:hover {
-    background-color: #FFE500;
-}
-
-nav>a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-.image {
-    grid-area: image;
-    
-}
-
-.image img {
-    width: 100%;
-    height: 43em;
-}
-
-.squares {
-    position: absolute;
-    /* left: 16.6%;
+        /* Insert great and useful css here */
+        
+        body {
+            background-color: #FFE500;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: auto;
+            grid-template-areas: " . . header header header header header header header header . . " " navSideLeft navSideLeft nav nav nav nav nav nav nav nav navSideRight navSideRight " " image image image image image image image image image image image image " " . . main main main main main main main main . . " " scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview " " footerSideLeft footerSideLeft footer footer footer footer footer footer footer footer footerSideRight footerSideRight ";
+        }
+        
+        header {
+            grid-area: header;
+            background-color: #FFE500;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: auto;
+            grid-template-areas: " headerLogo . links links ";
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        
+        #headerLogo {
+            grid-area: headerLogo;
+            height: 10em;
+        }
+        
+        #links {
+            grid-area: links;
+            text-align: right;
+        }
+        
+        nav {
+            grid-area: nav;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: " home om tek nat hum nyheter elev kontakt ";
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            font-size: 2em;
+        }
+        
+        .navSideLeft {
+            grid-area: navSideLeft;
+            background-color: white;
+            height: auto;
+            width: 100%;
+        }
+        
+        .navSideRight {
+            grid-area: navSideRight;
+            background-color: white;
+            height: auto;
+            width: 100%;
+        }
+        
+        #tek {
+            grid-area: tek;
+        }
+        
+        #nat {
+            grid-area: nat;
+        }
+        
+        #hum {
+            grid-area: hum;
+        }
+        
+        #home {
+            grid-area: home;
+        }
+        
+        #om {
+            grid-area: om;
+        }
+        
+        #nyheter {
+            grid-area: nyheter;
+        }
+        
+        #elev {
+            grid-area: elev;
+        }
+        
+        .kontakt {
+            grid-area: kontakt;
+        }
+        
+        nav>a:hover {
+            background-color: #FFE500;
+        }
+        
+        nav>a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+        
+        .image {
+            grid-area: image;
+            background-color: green;
+        }
+        
+        .image img {
+            width: 100%;
+            height: 43em;
+        }
+        
+        .squares {
+            position: absolute;
+            /* left: 16.6%;
     right: 83.3%; */
-    width: 100%;
-    margin-left: 0;
-    top: 53em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: " . sq1 sq2 sq3 sq4 .";
-    grid-column-gap: 1.5em;
-    filter: invert(100%);
-}
-
-#square1 {
-    grid-area: sq1;
-    background-color: white;
-    width: 1fr;
-    height: 16em;
-    background-image: url("/img/eventuellt ivars pappa.png");
-    background-size: cover;
-}
-
-#square2 {
-    grid-area: sq2;
-    background-color: white;
-    width: 1fr;
-    height: 16em;
-    background-image: url("/img/friterad harder ivar.png");
-    background-size: cover;
-}
-
-#square3 {
-    grid-area: sq3;
-    background-color: white;
-    max-width: 1fr;
-    height: 16em;
-}
-
-#square4 {
-    grid-area: sq4;
-    background-color: white;
-    width: 1fr;
-    height: 16em;
-    background-image: url("/img/IMG_20201028_173541.jpg");
-}
-
-main {
-    margin-top: 12em;
-    grid-area: main;
-}
-
-.scrollingReview {
-    grid-area: scrollingReview;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: " review review review review review review";
-    grid-column-gap: 1em;
-    margin: 1em;
-}
-
-.review {
-    display: flex;
-    justify-content: center;
-    border: #345995 2px solid;
-    display: grid;
-}
-
-.review h3 {
-    margin: 0;
-}
-
-.review p {
-    margin: 0;
-}
-
-footer {
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: " kontakt sociala mapid mapid " " kontakt sociala mapid mapid " " other other mapid mapid ";
-    background-color: #345995;
-}
-
-#footerSideLeft {
-    grid-area: footerSideLeft;
-    background-color: #345995;
-    height: auto;
-}
-
-#footerSideRight {
-    grid-area: footerSideRight;
-    background-color: #345995;
-    height: auto;
-}
-
-#mapid {
-    grid-area: mapid;
-    height: 30em;
-}
-
-#kontakt {
-    grid-area: kontakt;
-}
-
-#sociala {
-    grid-area: sociala;
-}
-
-#other {
-    grid-area: other;
-}
-
-h1 {
-    font-size: 4em;
-    margin: 0;
-}
-
-.rightAside {
-    background-color: blue;
-}
-
-.weekdays {
-    background-color: #f2d;
-    margin: 0;
-}
-
-.weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-}
-
-.days {
-    background-color: aqua;
-    margin: 0;
-}
-
-.days li {
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-.login {
-    padding: 0.5em;
-}
-
-#lärLog {
-    margin-right: 1em;
-}
-
-#lärLog:hover {
-    opacity: 0.7;
-}
-
-#elevLog {
-    margin-right: 1em;
-}
-
-#elevLog:hover {
-    opacity: 0.7;
-}
-
-.sök {
-    padding: 0.5em;
-}
-
-.språk {
-    padding: 0.5em;
-    width: 20em;
-    align-self: flex-end;
-}
-
-.språk:hover .språkDrop {
-    display: flex;
-    position: absolute;
-    background-color: white;
-    justify-content: right;
-}
-
-.språkDrop {
-    display: none;
-    list-style: none;
-}
-
-#RutText {
-    display: grid;
-    height: 100%;
-    padding-top: 0em;
-    background-color: rgba(28, 28, 28, 0.73);
-}
-
-.LitenRuttext {
-    margin: auto;
-    margin-top: 7em;
-    font-size: 1.4em;
-    filter: brightness(100%) invert(100%);
-}
-
-.StorRuttext {
-    margin: auto;
-    font-size: 2.2em;
-    margin-bottom: 1em;
-    filter: brightness(100%) invert(100%);
-}
-
-#RutText:hover {
-    display: none;
-}
-
-#RutPil {
-    display: none;
-    height: 100%;
-    padding-top: 0em;
-    background-color: rgba(28, 28, 28, 0.73);
-}
-
-#RutText:hover+#RutPil {
-    display: grid;
-}
-
-#RutPil:hover+#RutText {
-    display: none;
-}
-
-#square1:hover+#RutPil {
-    display: grid;
-}
-
-#square2:hover+#RutPil {
-    display: grid;
-}
-
-#square3:hover+#RutPil {
-    display: grid;
-}
-
-#square4:hover+#RutPil {
-    display: grid;
-}
-
-.kontaktListan {
-    width: fit-content;
-    margin-left: 2em;
-}
-
-.lärareAÖ{
-    font-size: 2em;
-}
-
-.fa-user{
-    margin: 0;
-}
-
-.lärarLista {
-    background-color: #e0bb00;
-    margin-top: -1.2em;
-    margin-left: 1.5em;
-    width: fit-content;
-    display: grid;
-}
-
-.lärare {
-    margin:1em;
-    width: fit-content;
-}
-
-.lärarText {
-    margin: 0;
-    width: fit-content;
-}
-
-.curNav {
-    background-color: #FFE500;
-}
-
-
-/* ==========================================================================
+            width: 100%;
+            margin-left: 0;
+            top: 53em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: " . sq1 sq2 sq3 sq4 .";
+            grid-column-gap: 1.5em;
+            filter: invert(100%);
+        }
+        
+        #square1 {
+            grid-area: sq1;
+            background-color: white;
+            width: 1fr;
+            height: 16em;
+            background-image: url("/img/eventuellt ivars pappa.png");
+            background-size: cover;
+        }
+        
+        #square2 {
+            grid-area: sq2;
+            background-color: white;
+            width: 1fr;
+            height: 16em;
+            background-image: url("/img/friterad harder ivar.png");
+            background-size: cover;
+        }
+        
+        #square3 {
+            grid-area: sq3;
+            background-color: white;
+            max-width: 1fr;
+            height: 16em;
+        }
+        
+        #square4 {
+            grid-area: sq4;
+            background-color: white;
+            width: 1fr;
+            height: 16em;
+            background-image: url("/img/IMG_20201028_173541.jpg");
+        }
+        
+        main {
+            margin-top: 1em;
+            grid-area: main;
+        }
+        
+        #fixaMarginalen {
+            margin-top: 12em;
+        }
+        
+        .scrollingReview {
+            grid-area: scrollingReview;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: " review review review review review review";
+            grid-column-gap: 1em;
+            margin: 1em;
+        }
+        
+        .review {
+            display: flex;
+            justify-content: center;
+            border: #345995 2px solid;
+            display: grid;
+            background-color: white;
+        }
+        
+        .review h3 {
+            margin: 0;
+        }
+        
+        .review p {
+            margin: 0;
+        }
+        
+        footer {
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: " kontakt sociala mapid mapid " " kontakt sociala mapid mapid " " other other mapid mapid ";
+            background-color: #345995;
+        }
+        
+        #footerSideLeft {
+            grid-area: footerSideLeft;
+            background-color: #345995;
+            height: auto;
+        }
+        
+        #footerSideRight {
+            grid-area: footerSideRight;
+            background-color: #345995;
+            height: auto;
+        }
+        
+        #mapid {
+            grid-area: mapid;
+            height: 30em;
+        }
+        /*
+        #kontakt {
+            grid-area: kontakt;
+        }*/
+        
+        #sociala {
+            grid-area: sociala;
+        }
+        
+        #other {
+            grid-area: other;
+        }
+        
+        h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        
+        .rightAside {
+            background-color: blue;
+        }
+        
+        .weekdays {
+            background-color: #f2d;
+            margin: 0;
+        }
+        
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            text-align: center;
+        }
+        
+        .days {
+            background-color: aqua;
+            margin: 0;
+        }
+        
+        .days li {
+            display: inline-block;
+            width: 13.6%;
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .login {
+            padding: 0.5em;
+        }
+        
+        #lärLog {
+            margin-right: 1em;
+        }
+        
+        #lärLog:hover {
+            opacity: 0.7;
+        }
+        
+        #elevLog {
+            margin-right: 1em;
+        }
+        
+        #elevLog:hover {
+            opacity: 0.7;
+        }
+        
+        .sök {
+            padding: 0.5em;
+        }
+        
+        .språk {
+            padding: 0.5em;
+            width: 20em;
+            align-self: flex-end;
+        }
+        
+        .språk:hover .språkDrop {
+            display: flex;
+            position: absolute;
+            padding-left: 2em;
+            padding-right: 2em;
+            background-color: white;
+            border: solid 1px black;
+        }
+        
+        .språkDrop {
+            flex-direction: column;
+            margin-left: 14em;
+            display: none;
+        }
+        
+        .RutText {
+            display: grid;
+            height: 100%;
+            padding-top: 0em;
+            background-color: rgba(28, 28, 28, 0.73);
+        }
+        
+        .LitenRuttext {
+            margin: auto;
+            margin-top: 7em;
+            font-size: 1.4em;
+            filter: brightness(100%) invert(100%);
+        }
+        
+        .StorRuttext {
+            margin: auto;
+            font-size: 2.2em;
+            margin-bottom: 1em;
+            filter: brightness(100%) invert(100%);
+        }
+        
+        .RutText:hover {
+            background-color: rgba(28, 28, 225, 0.73);
+        }
+        
+        .RutText:hover+.square {
+            background-size: 10cm;
+        }
+        
+        .kontaktListan {
+            width: fit-content;
+            margin-left: 2em;
+        }
+        
+        .lärareAÖ {
+            font-size: 2em;
+        }
+        
+        .fa-user {
+            margin: 0;
+        }
+        
+        .lärarLista {
+            background-color: #e0bb00;
+            margin-top: -1.2em;
+            margin-left: 1.5em;
+            width: fit-content;
+            display: grid;
+        }
+        
+        .lärare {
+            margin: 1em;
+            width: fit-content;
+        }
+        
+        .lärarText {
+            margin: 0;
+            width: fit-content;
+        }
+        
+        .curNav {
+            background-color: #FFE500;
+        }
+        
+        @media (max-width: 1000px) {
+            h1 {
+                font-size: 8vw;
+            }
+            #headerLogo {
+                grid-area: headerLogo;
+                height: 4em;
+            }
+            /*
+            .container {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-row: auto;
+                grid-template-areas: " header header header header header header " " nav nav nav nav nav nav " " nav nav nav nav nav nav " " image image image image image image " " main main main main main main" " footer footer footer footer footer footer ";
+            }*/
+            nav {
+                grid-area: nav;
+                background-color: white;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto auto;
+                grid-template-areas: " home om tek nat " " hum nyheter elev kontakt ";
+                padding-top: 0.3em;
+                padding-bottom: 0.3em;
+                font-size: 2em;
+            }
+        }
+        /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-
-/*
+        /*
  * Hide visually and from screen readers
  */
-
-.hidden,
-[hidden] {
-    display: none !important;
-}
-
-
-/*
+        
+        .hidden,
+        [hidden] {
+            display: none !important;
+        }
+        /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
@@ -518,49 +501,43 @@ a {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-
-.sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
-}
-
-
-/*
+        
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+            /* 1 */
+        }
+        /*
  * Extends the .sr-only class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
-}
-
-
-/*
+        
+        .sr-only.focusable:active,
+        .sr-only.focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            white-space: inherit;
+            width: auto;
+        }
+        /*
  * Hide visually and from screen readers, but maintain layout
  */
-
-.invisible {
-    visibility: hidden;
-}
-
-
-/*
+        
+        .invisible {
+            visibility: hidden;
+        }
+        /*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -571,104 +548,100 @@ a {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
-.clearfix::before,
-.clearfix::after {
-    content: " ";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-
-/* ==========================================================================
+        
+        .clearfix::before,
+        .clearfix::after {
+            content: " ";
+            display: table;
+        }
+        
+        .clearfix::after {
+            clear: both;
+        }
+        /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-
-/* ==========================================================================
+        
+        @media only screen and (min-width: 35em) {
+            /* Style adjustments for viewports that meet the condition */
+        }
+        
+        @media print,
+        (-webkit-min-device-pixel-ratio: 1.25),
+        (min-resolution: 1.25dppx),
+        (min-resolution: 120dpi) {
+            /* Style adjustments for high resolution devices */
+        }
+        /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
-@media print {
-    *,
-    *::before,
-    *::after {
-        background: #fff !important;
-        color: #000 !important;
-        /* Black prints faster */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-    a[href]::after {
-        content: " (" attr(href) ")";
-    }
-    abbr[title]::after {
-        content: " (" attr(title) ")";
-    }
-    /*
+        
+        @media print {
+            *,
+            *::before,
+            *::after {
+                background: #fff !important;
+                color: #000 !important;
+                /* Black prints faster */
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+            a,
+            a:visited {
+                text-decoration: underline;
+            }
+            a[href]::after {
+                content: " (" attr(href) ")";
+            }
+            abbr[title]::after {
+                content: " (" attr(title) ")";
+            }
+            /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-    a[href^="#"]::after,
-    a[href^="javascript:"]::after {
-        content: "";
-    }
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-    /*
+            a[href^="#"]::after,
+            a[href^="javascript:"]::after {
+                content: "";
+            }
+            pre {
+                white-space: pre-wrap !important;
+            }
+            pre,
+            blockquote {
+                border: 1px solid #999;
+                page-break-inside: avoid;
+            }
+            /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-    thead {
-        display: table-header-group;
-    }
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-.RutText {
-    display: grid;
-    height: 100%;
-    padding-top: 0em;
-    background-color: rgba(28, 28, 28, 0.73);
-}
+            thead {
+                display: table-header-group;
+            }
+            tr,
+            img {
+                page-break-inside: avoid;
+            }
+            p,
+            h2,
+            h3 {
+                orphans: 3;
+                widows: 3;
+            }
+            h2,
+            h3 {
+                page-break-after: avoid;
+            }
+        }
+        
+        .RutText {
+            display: grid;
+            height: 100%;
+            padding-top: 0em;
+            background-color: rgba(28, 28, 28, 0.73);
+        }

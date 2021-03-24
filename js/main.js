@@ -13,3 +13,13 @@ function search() {
     url = 'http://www.google.com/search?q=' + query;
     window.open(url, '_blank');
 }
+
+
+function textHidden() {
+    document.querySelectorAll('p').forEach(e => e.style.color = 'white');
+    document.querySelectorAll('h1').forEach(e => e.style.color = 'white');
+    document.querySelectorAll('h2').forEach(e => e.style.color = 'white');
+    document.querySelectorAll('h3').forEach(e => e.style.color = 'white');
+    document.querySelectorAll('h4').forEach(e => e.style.color = 'white');
+    document.querySelectorAll('div').forEach(e => e.hidden = true);
+}

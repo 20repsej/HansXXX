@@ -48,10 +48,10 @@
                 <div class="språk">
                     <a href="#" id="språk">Välj Språk <i class="fas fa-chevron-down"></i></a>
                     <div class="språkDrop">
-                        <ul>
-                            <li>Svenska</li>
-                            <li>Inget språk</li>
-                        </ul>
+                        <a href="https://sv.wikipedia.org/wiki/Svenska">Svenska</a>
+                        <a href="https://sv.wikipedia.org/wiki/Engelska">Engelska</a>
+                        <a href="https://sv.wikipedia.org/wiki/Latin">Latin</a>
+                        <a href="#" onclick="textHidden()">Inget språk</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <div id="elev">Elev</div>
             </a>
             <a href="kontakt.html" class="curNav">
-                <div id="kontakt">Kontakt</div>
+                <div class="kontakt">Kontakt</div>
             </a>
         </nav>
         <div class="navSideLeft"></div>
@@ -87,96 +87,106 @@
         <div class="image">
             <img src="/img/Callcentre.jpg" alt="Tom Callcentre" />
         </div>
-        
-        </div>
-        <main>
-        <div class="kontaktListan"> 
-            <div>
-            <h1 class="lärareAÖ">Lärare A-Ö</h1>
-            <i class="fas fa-user"></i>
-                <div class="lärarLista">
-                <div class="lärare">
-                    <b class="lärarText">Anders Blomström </b>
-                    <p class="lärarText">svenska, historia </p>
-                    <p class="lärarText">0243-747 46 </p>
-                    <a href="mailto:anita.mikaelsson@soltorgsgymnasiet.se"><p class="lärarText">anders.blomstrom@soltorgsgymnasiet.se</p></a>
-                </div>
-                <div class="lärare">
-                    <b class="lärarText">Berivan Aslan</b>
-                    <p class="lärarText">Skoladministratör</p>
-                    <p class="lärarText">0243-744 92</p>
-                    <a href="mailto:berivan.aslan@borlange.se"><p class="lärarText">berivan.aslan@borlange.se</p></a>
-                </div>
-            </div>
-            <br></br>
-            <div>
-                <h1 class="lärareAÖ">Övrig Personal A-Ö</h1>
-                <i class="fas fa-user"></i>
-                    <div class="lärarLista">
-                    <div class="lärare">
-                        <b class="lärarText">Anita Brandt </b>
-                        <p class="lärarText">Biträdande rektor</p>
-                        <p class="lärarText">0243-759 65</p>
-                        <a href="anita.brandt@borlange.se"><p class="lärarText">anita.brandt@borlange.se</p></a>
-                    </div>
-                    <div class="lärare">
-                        <b class="lärarText">Anita Mikaelsson</b>
-                        <p class="lärarText">svenska, engelska</p>
-                        <p class="lärarText">0243-748 59</p>
-                        <a href="mailto:anita.mikaelsson@soltorgsgymnasiet.se"><p class="lärarText">anita.mikaelsson@soltorgsgymnasiet.se</p></a>
-                    </div>
-                </div>
-        </div>
-        </main>
-        <div class="scrollingReview">
-            <div class="review">
-                <h3>Fantastisk skola</h3>
-                <p>- betald elev</p>
-            </div>
-            <div class="review">
-                <h3>Fantastisk skola</h3>
-                <p>- betald elev</p>
-            </div>
-            <div class="review">
-                <h3>Fantastisk skola</h3>
-                <p>- betald elev</p>
-            </div>
-            <div class="review">
-                <h3>Fantastisk skola</h3>
-                <p>- betald elev</p>
-            </div>
-            <div class="review">
-                <h3>Fantastisk skola</h3>
-                <p>- betald elev</p>
-            </div>
-            <div class="review">
-                <h3>Fantastisk skola</h3>
-                <p>- betald elev</p>
-            </div>
-        </div>
-        <div id="footerSideLeft"></div>
-        <div id="footerSideRight"></div>
-        <footer>
-            <div id="kontakt">
-                <h2>Kontakt</h2>
-                <p><i class="fas fa-phone"></i> 0243-744 92</p>
-                <p><i class="fas fa-map-marked-alt"></i> Masergatan 20</p>
-            </div>
-            <div id="sociala">
-                <h2>Sociala Medier</h2>
-                <a href="#"><i class="fab fa-instagram"></i> @Soltorgsgymnasiet</a><br><br>
-                <a href="#"><i class="fab fa-facebook-f"></i> @Soltorgsgymnasiet</a><br><br>
-                <a href="#"><i class="fab fa-twitter"></i> @Soltorgsgymnasiet</a>
-            </div>
-            <div id="other">
-                <a href="#">Sidmapp</a>
-                <a href="#">Privacitet</a>
-                <p>&copy; Soltorgsgymnasiet 2021 | Hemsidedesign av Marylebone Boys' School</p>
-            </div>
-            <div id="mapid"></div>
-        </footer>
 
-        <!--
+    </div>
+    <main>
+        <div class="kontaktListan">
+            <div>
+                <h1 class="lärareAÖ">Lärare A-Ö</h1>
+                <i class="fas fa-user"></i>
+                <div class="lärarLista">
+                    <div class="lärare">
+                        <b class="lärarText">Anders Blomström </b>
+                        <p class="lärarText">svenska, historia </p>
+                        <p class="lärarText">0243-747 46 </p>
+                        <a href="mailto:anita.mikaelsson@soltorgsgymnasiet.se">
+                            <p class="lärarText">anders.blomstrom@soltorgsgymnasiet.se</p>
+                        </a>
+                    </div>
+                    <div class="lärare">
+                        <b class="lärarText">Berivan Aslan</b>
+                        <p class="lärarText">Skoladministratör</p>
+                        <p class="lärarText">0243-744 92</p>
+                        <a href="mailto:berivan.aslan@borlange.se">
+                            <p class="lärarText">berivan.aslan@borlange.se</p>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h1 class="lärareAÖ">Övrig Personal A-Ö</h1>
+                    <i class="fas fa-user"></i>
+                    <div class="lärarLista">
+                        <div class="lärare">
+                            <b class="lärarText">Anita Brandt </b>
+                            <p class="lärarText">Biträdande rektor</p>
+                            <p class="lärarText">0243-759 65</p>
+                            <a href="anita.brandt@borlange.se">
+                                <p class="lärarText">anita.brandt@borlange.se</p>
+                            </a>
+                        </div>
+                        <div class="lärare">
+                            <b class="lärarText">Anita Mikaelsson</b>
+                            <p class="lärarText">svenska, engelska</p>
+                            <p class="lärarText">0243-748 59</p>
+                            <a href="mailto:anita.mikaelsson@soltorgsgymnasiet.se">
+                                <p class="lärarText">anita.mikaelsson@soltorgsgymnasiet.se</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="scrollingReview">
+        <div class="review">
+            <h3>Fantastisk skola</h3>
+            <p>- betald elev</p>
+        </div>
+        <div class="review">
+            <h3>Fantastisk skola</h3>
+            <p>- betald elev</p>
+        </div>
+        <div class="review">
+            <h3>Fantastisk skola</h3>
+            <p>- betald elev</p>
+        </div>
+        <div class="review">
+            <h3>Fantastisk skola</h3>
+            <p>- betald elev</p>
+        </div>
+        <div class="review">
+            <h3>Fantastisk skola</h3>
+            <p>- betald elev</p>
+        </div>
+        <div class="review">
+            <h3>Fantastisk skola</h3>
+            <p>- betald elev</p>
+        </div>
+    </div>
+    <div id="footerSideLeft"></div>
+    <div id="footerSideRight"></div>
+    <footer>
+        <div class="kontakt">
+            <h2>Kontakt</h2>
+            <p><i class="fas fa-phone"></i> 0243-744 92</p>
+            <p><i class="fas fa-map-marked-alt"></i> Masergatan 20</p>
+        </div>
+        <div id="sociala">
+            <h2>Sociala Medier</h2>
+            <a href="#"><i class="fab fa-instagram"></i> @Soltorgsgymnasiet</a><br><br>
+            <a href="#"><i class="fab fa-facebook-f"></i> @Soltorgsgymnasiet</a><br><br>
+            <a href="#"><i class="fab fa-twitter"></i> @Soltorgsgymnasiet</a>
+        </div>
+        <div id="other">
+            <a href="#">Sidmapp</a>
+            <a href="#">Privacitet</a>
+            <p>&copy; Soltorgsgymnasiet 2021 | Hemsidedesign av Marylebone Boys' School</p>
+        </div>
+        <div id="mapid"></div>
+    </footer>
+
+    <!--
     <aside class="rightAside">
       <div class="calendar">
         <ul class="weekdays">
@@ -223,7 +233,6 @@
         </ul>
       </div>
     </aside> -->
-    </div>
 
     <!-- Add your site or application content here -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
