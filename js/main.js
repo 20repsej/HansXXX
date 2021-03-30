@@ -23,3 +23,11 @@ function textHidden() {
     document.querySelectorAll('h4').forEach(e => e.style.color = 'white');
     document.querySelectorAll('div').forEach(e => e.hidden = true);
 }
+
+function changeElev() {
+    document.getElementById("status").innerHTML = "Status: Elev";
+}
+
+function changeLarare() {
+    document.getElementById("status").innerHTML = "Status: Lärare";
+}

@@ -372,13 +372,13 @@
         
         .språk {
             padding: 0.5em;
-            width: 20em;
-            align-self: flex-end;
         }
         
         .språk:hover .språkDrop {
-            display: flex;
+            display: grid;
             position: absolute;
+            left: 75%;
+            z-index: 1;
             padding-left: 2em;
             padding-right: 2em;
             background-color: white;
@@ -387,7 +387,7 @@
         
         .språkDrop {
             flex-direction: column;
-            margin-left: 14em;
+           
             display: none;
         }
         
@@ -454,6 +454,10 @@
         .curNav {
             background-color: #FFE500;
         }
+
+        .hemligTitel{
+            display: none;
+        }
         
         @media (max-width: 1000px) {
             h1 {
@@ -470,6 +474,14 @@
                 grid-row: auto;
                 grid-template-areas: " header header header header header header " " nav nav nav nav nav nav " " nav nav nav nav nav nav " " image image image image image image " " main main main main main main" " footer footer footer footer footer footer ";
             }*/
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-auto-rows: auto;
+                grid-template-areas: " header header header header header header header header header header header header " " nav nav nav nav nav nav nav nav nav nav nav nav " " image image image image image image image image image image image image " " . . main main main main main main main main . . " " scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview scrollingReview " " footerSideLeft footerSideLeft footer footer footer footer footer footer footer footer footerSideRight footerSideRight ";
+            }
+
             nav {
                 grid-area: nav;
                 background-color: white;
@@ -479,7 +491,112 @@
                 grid-template-areas: " home om tek nat " " hum nyheter elev kontakt ";
                 padding-top: 0.3em;
                 padding-bottom: 0.3em;
+                font-size: 6vw;
+            }
+
+            .squares {
+                width: 100%;
+                display: none;
+            }
+
+            .navSideLeft {
+                grid-area: navSideLeft;
+                background-color: white;
+                height: auto;
+                width: auto;
+            }
+            
+            .navSideRight {
+                grid-area: navSideRight;
+                background-color: white;
+                height: auto;
+                width: auto;
+            }
+
+            footer {
+                grid-area: footer;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                grid-template-areas: " kontakt kontakt kontakt " " sociala sociala sociala " " mapid mapid mapid " " other other other ";
+                background-color: #345995;
+            }
+
+            header {
+            grid-area: header;
+            background-color: #FFE500;
+            display: grid;
+            grid-template-columns: auto;
+            grid-auto-rows: auto;
+            grid-template-areas: " headerLogo " " links ";
+            padding-top: 1em;
+            padding-bottom: 1em;
+            }
+            .scrollingReview {
+                grid-area: scrollingReview;
+                display: grid;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-columns: auto;
+                grid-template-areas: " review review review" "review review review";
+                grid-column-gap: 1vw;
+                margin: 1vw;
+            }
+        
+            .kontaktListan {
+                width: fit-content;
+                margin:0;
+            }
+            
+            .lärareAÖ {
                 font-size: 2em;
+            }
+            
+            .fa-user {
+                display: none;
+            }
+        
+            .lärarLista {
+                background-color: #e0bb00;
+                margin-top: 1em;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                width: fit-content;
+                max-width: 93vw;
+                display: grid;
+            }
+            
+            .lärare {
+                margin: 0.5em;
+                width: fit-content;
+            }
+            
+            .lärarText {
+                margin: 0;
+                width: fit-content;
+            }
+
+            .språkDrop {
+                flex-direction: column;
+                display: none;
+            }
+
+            .språk:hover .språkDrop {
+                display: grid;
+                position: absolute; /*relative*/
+                right: 0.5em;
+                z-index: 1;
+                padding-left: 2em;
+                padding-right: 2em;
+                background-color: white;
+                border: solid 1px black;
+            }
+
+            .naturTitel{
+                display:none;
+            }
+
+            .hemligTitel{
+                display: grid;
             }
         }
         /* ==========================================================================

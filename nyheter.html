@@ -38,14 +38,17 @@
             <a href="index.html"><img id="headerLogo" src="/img/soltorgLiggande.png" alt="Soltorgsgymnasiet Logotyp" /></a>
             <div id="links">
                 <div class="login">
-                    <a href="#" id="lärLog"><i class="fas fa-chalkboard-teacher"></i> Inloggning Lärare</a>
-                    <a href="#" id="elevLog"><i class="fas fa-user-graduate"></i> Inloggning Elev</a>
+                    <a href="#" onclick="changeLarare()" id="lärLog"><i class="fas fa-chalkboard-teacher"></i> Inloggning Lärare</a>
+                    <a href="#" onclick="changeElev()" id="elevLog"><i class="fas fa-user-graduate"></i> Inloggning Elev</a>
+                </div>
+                <div>
+                    <p id="status">Status: Ingen</p>
                 </div>
                 <div class="sök">
-                    <input type="text" name="Sök" placeholder="Sök">
-                    <a href="#" onclick="search()" id="sökKnapp">
-                        <i class="fas fa-search"></i>
-                    </a>
+                    <form action="https://www.google.com/search">
+                        <input type="text" name="q">
+                        <input type="submit" value="search">
+                    </form> 
                 </div>
                 <div class="språk">
                     <a href="#" id="språk">Välj Språk <i class="fas fa-chevron-down"></i></a>
